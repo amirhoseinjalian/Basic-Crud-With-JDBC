@@ -1,11 +1,8 @@
 package com.jalian.hw7.projectUtillity;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-
 public class MySqlConnection {
     private static Connection connection;
-
     static {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -14,7 +11,6 @@ public class MySqlConnection {
             System.out.println(e.getMessage());
         }
     }
-
     public static Connection getConnection() {
         return connection;
     }
