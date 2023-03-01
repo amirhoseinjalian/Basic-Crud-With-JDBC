@@ -1,0 +1,17 @@
+package com.jalian.hw7.dao;
+
+import com.jalian.hw7.dao.entities.BaseEntity;
+
+import java.util.LinkedList;
+
+public interface Dao<T extends BaseEntity, E> extends Closeable {
+    public int add(T t);
+
+    public boolean delete(T t);
+
+    public T get(E e);
+
+    public LinkedList<T> getAll();
+
+    public boolean update(T t); //ino mikhastam tu dao detail bezaram vali fekr kardam eshtebah mishe??????????????????????????????????????????????
+}
