@@ -24,6 +24,7 @@ public class Ui {
     private static String option;
 
     public static void main(String[] args) {
+        //this comment added by github
         System.out.println("1)log in\n2)sign in");
         option = scanner.nextLine();
         switch (option) {
